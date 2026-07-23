@@ -2,7 +2,7 @@ use ecs_rust_engine as ecs;
 use std::collections::HashMap;
 
 #[test]
-fn integration_test_entity_equal__id(){
+fn integration_test_entity_equal_id(){
     let entity_1 = ecs::Entity::new(String::from("equal_id"));
     let entity_2 = ecs::Entity::new(String::from("equal_id"));
     assert_eq!(entity_1, entity_2);
